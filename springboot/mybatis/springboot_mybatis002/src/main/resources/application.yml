@@ -1,0 +1,14 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    name: mybatis
+    driver: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/mybatis?serverTimezone=UTC
+    username: root
+    password: 123456
+
+mybatis:
+  mybatis.mapper-locations: classpath:com/itcast/mapper/*Mapper.xml
+  type-aliases-package: com.itcast.domain
